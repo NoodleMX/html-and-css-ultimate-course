@@ -3,16 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendar Class</title>
+    <title>Auto Complete Form</title>
   </head>
   <body>
-    <form action="">
-      <fieldset>
-        <legend>Platzi Calendar</legend>
-        <label for="calendar">Calendar:</label>
-        <input type="datetime-local" id="calendar" name="calendar" />
-        <input type="submit" value="Submit" />
-      </fieldset>
-    </form>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>Auto Complete Form</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" autocomplete="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" autocomplete="country" required />
+
+          <label for="postal-code">Postal Code:</label>
+          <input type="text" id="postal-code" name="postal-code" autocomplete="postal-code" required />
+
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
