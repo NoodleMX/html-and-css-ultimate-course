@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Class</title>
+  </head>
+  <body>
+    <main>
+      <h2>First way to create a select element</h2>
+      <select name="courses" id="">
+        <option value="" disabled selected>Select a course</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Ruby">Ruby</option>
+      </select>
+      <h2>Second way to create a select element</h2>
+      <input list="courses" />
+      <datalist id="courses">
+        <option value="Select a course" disabled selected></option>
+        <option value="JavaScript"></option>
+        <option value="Python"></option>
+        <option value="Ruby"></option>
+        <option value="Java"></option>
+        <option value="C#"></option>
+        <option value="C++"></option>
+        <option value="PHP"></option>
+      </datalist>
+    </main>
+  </body>
+</html>
